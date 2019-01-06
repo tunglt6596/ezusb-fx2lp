@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in_isim_beh.exe" -prj "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in_beh.prj" "work.fifo_stream_in" 

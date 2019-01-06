@@ -1,0 +1,18 @@
+Creating log file C:\Users\TungLT\Desktop\Recycle
+Bin\DEMO_FINAL_FPGA_FX2LP\STREAM_IN\fpga_fx2lp_final_concated\fifo_stream_in_xpa
+.log.
+Design load 35% complete
+INFO:Power:1692 - 
+   --------------------------------------------------------------
+                         The power estimate will be calculated using PREVIEW
+   data.
+   --------------------------------------------------------------
+
+Design load 70% completeDesign load 100% complete
+Running Vector-less Activity Propagation
+......
+Finished Running Vector-less Activity Propagation
+Finished Running Vector-less Activity Propagation 0 secs 
+
+Design 'fifo_stream_in.cxt' opened successfully
+

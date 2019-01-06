@@ -1,0 +1,112 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/gen_clock_data_appear.vhd" in Library work.
+Entity <gen_clock_data_appear> compiled.
+Entity <gen_clock_data_appear> (Architecture <behavior>) compiled.
+Compiling vhdl file "C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/fpga_fx2lp_final.vhd" in Library work.
+Architecture fifo_stream_in_arch of Entity fifo_stream_in is up to date.
+Compiling vhdl file "C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/compile/top.vhd" in Library work.
+Entity <top> compiled.
+Entity <top> (Architecture <behavior>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <gen_clock_data_appear> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <fifo_stream_in> in library <work> (architecture <fifo_stream_in_arch>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top> in library <work> (Architecture <behavior>).
+Entity <top> analyzed. Unit <top> generated.
+
+Analyzing Entity <gen_clock_data_appear> in library <work> (Architecture <behavior>).
+ERROR:Xst:827 - "C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/gen_clock_data_appear.vhd" line 40: Signal done cannot be synthesized, bad synchronous description. The description style you are using to describe a synchronous element (register, memory, etc.) is not supported in the current software release.
+--> 
+
+Total memory usage is 232084 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

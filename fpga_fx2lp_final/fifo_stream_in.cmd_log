@@ -1,0 +1,637 @@
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+taengine -intstyle ise -f fifo_stream_in -w --format html1 -l fifo_stream_in_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+taengine -intstyle ise -f fifo_stream_in -w --format html1 -l fifo_stream_in_html/tim/timing_report.htm 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+taengine -intstyle ise -f fifo_stream_in -w --format html1 -l fifo_stream_in_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+taengine -intstyle ise -f fifo_stream_in -w --format html1 -l fifo_stream_in_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+taengine -intstyle ise -f fifo_stream_in -w --format html1 -l fifo_stream_in_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+taengine -intstyle ise -f fifo_stream_in -w --format html1 -l fifo_stream_in_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 
+xst -intstyle ise -ifn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.xst" -ofn "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc top.ucf -p xc2c64a-VQ44-7 "fifo_stream_in.ngc" fifo_stream_in.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 fifo_stream_in.ngd 
+XSLTProcess fifo_stream_in_build.xml 
+tsim -intstyle ise fifo_stream_in fifo_stream_in.nga 
+hprep6 -s IEEE1149 -i fifo_stream_in 

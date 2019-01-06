@@ -1,0 +1,41 @@
+Pin Freeze File:  version P.20131013
+
+2C64A44VQ XC2C64A-7-VQ44
+clk S:PIN40
+data_in<0> S:PIN37
+data_in<1> S:PIN18
+flagd S:PIN16
+clk_o S:PIN22
+faddr<0> S:PIN27
+faddr<1> S:PIN28
+fdata<0> S:PIN1
+fdata<1> S:PIN2
+fdata<2> S:PIN3
+fdata<3> S:PIN5
+fdata<4> S:PIN6
+fdata<5> S:PIN8
+fdata<6> S:PIN12
+fdata<7> S:PIN13
+sloe S:PIN34
+slrd S:PIN29
+slwr S:PIN30
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_9 sloe
+PARTITION FB1_13 slwr
+
+PARTITION FB2_10 fdata<0>
+PARTITION FB2_12 fdata<1> fdata<2>
+
+PARTITION FB3_1 slrd faddr<1> faddr<0>
+PARTITION FB3_10 clk_o
+
+PARTITION FB4_1 fdata<3> fdata<4>
+PARTITION FB4_7 fdata<5>
+PARTITION FB4_11 fdata<6>
+PARTITION FB4_13 fdata<7>
+
+

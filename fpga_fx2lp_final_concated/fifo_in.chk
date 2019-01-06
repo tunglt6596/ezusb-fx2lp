@@ -1,0 +1,66 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+----------------- B l o c k 0 ------------------
+PLApt(18/56), Fanin(15/38), Clk(0/3), Bct(1/4), Pin(2/8), Mcell(7/16)
+PLApts[18/56] 3 4 5 6 1 10 20 7 9 14 16 17 18 () () () () () () () () () () () () () () () 2 () () () () () () () () () () () () () () () () () 19 () () 21 () () 11 () () 19
+Fanins[15] fdata<0>.n fdata<1>.n fdata<2>.n fdata<3>.n fdata<4>.n fdata<5>.n fdata<6>.n fdata<7>.n current_state<0>.n current_state<1>.n current_state<2>.n current_state<3>.n current_state<4>.n clk.p flagd.p
+clk[0] 
+CTC: (pt=1) clk ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 7] [slwr(57),slwr(30)] [sloe(53),sloe(34)] [current_state<4>(60)] [current_state<1>(59)]  
+           [current_state<3>(58)] [current_state<2>(52)] [current_state<0>(51)] 
+Signal[ 7] [ 0: (38)  ][ 1: (37)  ][ 2: (36)  ][ 3:  ][ 4:  ][ 5:  ][ 6: current_state<0>(51)  ][ 7:  
+           current_state<2>(52)  ][ 8: sloe(53) sloe(34)  ][ 9: (33)  ][ 10: (32)  ][ 11: (31)  ][ 12:  
+           slwr(57) slwr(30)  ][ 13: current_state<3>(58)  ][ 14: current_state<1>(59)  ][ 15:  
+           current_state<4>(60)  ]
+----------------- B l o c k 1 ------------------
+PLApt(4/56), Fanin(9/38), Clk(0/3), Bct(1/4), Pin(4/9), Mcell(3/16)
+PLApts[4/47] () () () () 1 () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () 21 () () () () () 22 () () 23
+Fanins[ 9] fdata<0>.n fdata<1>.n current_state<0>.n current_state<1>.n current_state<2>.n current_state<3>.n current_state<4>.n clk.p flagd.p
+clk[0] 
+CTC: (pt=1) clk ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 4] [fdata<2>(73),fdata<2>(3)] [fdata<1>(72),fdata<1>(2)] [fdata<0>(70),fdata<0>(1)] [clk(40)] 
+Signal[ 4] [ 0: (39)  ][ 1: clk(40)  ][ 2:  ][ 3:  ][ 4: (41)  ][ 5: (42)  ][ 6: (43)  ][ 7: (44)  ][ 8:  ] 
+           [ 9: fdata<0>(70) fdata<0>(1)  ][ 10:  ][ 11: fdata<1>(72) fdata<1>(2)  ][ 12: fdata<2>(73)  
+           fdata<2>(3)  ][ 13:  ][ 14:  ][ 15:  ]
+----------------- B l o c k 2 ------------------
+PLApt(1/56), Fanin(1/38), Clk(0/3), Bct(0/4), Pin(4/9), Mcell(4/16)
+PLApts[1/38] () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () 1
+Fanins[ 1] clk.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 4] [clk_out(86),clk_out(22)] [faddr<1>(78),faddr<1>(28)] [slrd(77),slrd(29)]  
+           [faddr<0>(79),faddr<0>(27)] 
+Signal[ 4] [ 0: slrd(77) slrd(29)  ][ 1: faddr<1>(78) faddr<1>(28)  ][ 2: faddr<0>(79) faddr<0>(27)  ][ 3:  ] 
+           [ 4:  ][ 5: (23)  ][ 6:  ][ 7:  ][ 8:  ][ 9: clk_out(86) clk_out(22)  ][ 10: (21)  ][ 11: (20)  ] 
+           [ 12:  ][ 13: (19)  ][ 14: (18)  ][ 15:  ]
+----------------- B l o c k 3 ------------------
+PLApt(6/56), Fanin(14/38), Clk(0/3), Bct(1/4), Pin(6/7), Mcell(5/16)
+PLApts[6/47] () () () () 1 () () () () () 24 () () 25 () () () () () () () () () () () () () () 26 () () () () () () () () () () () 27 () () () () () 28
+Fanins[14] fdata<0>.n fdata<1>.n fdata<2>.n fdata<3>.n fdata<4>.n fdata<5>.n fdata<6>.n current_state<0>.n current_state<1>.n current_state<2>.n current_state<3>.n current_state<4>.n clk.p flagd.p
+clk[0] 
+CTC: (pt=1) clk ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 6] [fdata<7>(105),fdata<7>(13)] [fdata<6>(103),fdata<6>(12)] [fdata<5>(99),fdata<5>(8)]  
+           [fdata<4>(94),fdata<4>(6)] [fdata<3>(93),fdata<3>(5)] [flagd(16)] 
+Signal[ 6] [ 0: fdata<3>(93) fdata<3>(5)  ][ 1: fdata<4>(94) fdata<4>(6)  ][ 2:  ][ 3:  ][ 4:  ][ 5:  ][ 6:  
+           fdata<5>(99) fdata<5>(8)  ][ 7:  ][ 8:  ][ 9:  ][ 10: fdata<6>(103) fdata<6>(12)  ][ 11:  ][ 12:  
+           fdata<7>(105) fdata<7>(13)  ][ 13: (14)  ][ 14: flagd(16)  ][ 15:  ]

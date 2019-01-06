@@ -1,0 +1,111 @@
+MDF Database:  version 1.0
+MDF_INFO | fifo_stream_in | XC2C64A-7-VQ44
+MACROCELL | 2 | 9 | clk_o_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | clk
+INPUTP | 1 | 13
+EQ | 1 | 
+   clk_o = clk;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 2 | faddr<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   faddr<0> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 2 | 1 | faddr<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   !faddr<1> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 1 | 9 | fdata<0>_MC
+ATTRIBUTES | 142869314 | 0
+INPUTS | 2 | data_in  | flagd
+INPUTP | 2 | 10 | 51
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   fdata<0> := data_in;	// (1 pt, 1 inp)
+    fdata<0>.CLK = clk;	// CTC	(1 pt, 1 inp)
+    fdata<0>.CE = flagd;	// (1 pt, 1 inp)
+
+MACROCELL | 1 | 11 | fdata<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   fdata<1> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 1 | 12 | fdata<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   fdata<2> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 3 | 0 | fdata<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   fdata<3> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 3 | 1 | fdata<4>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   fdata<4> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 3 | 6 | fdata<5>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   fdata<5> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 3 | 10 | fdata<6>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   fdata<6> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 3 | 12 | fdata<7>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   fdata<7> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 8 | sloe_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   !sloe = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 2 | 0 | slrd_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   !slrd = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 0 | 12 | slwr_MC
+ATTRIBUTES | 142869254 | 0
+INPUTS | 1 | flagd
+INPUTP | 1 | 51
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   slwr := !flagd;	// (1 pt, 1 inp)
+    slwr.CLK = clk;	// CTC	(1 pt, 1 inp)
+
+PIN | clk | 64 | 16 | LVCMOS18 | 13 | 1 | 2 | 9
+PIN | data_in | 64 | 16 | LVCMOS18 | 10 | 1 | 1 | 9
+PIN | flagd | 64 | 16 | LVCMOS18 | 51 | 2 | 1 | 9 | 0 | 12
+PIN | clk_o | 536871040 | 0 | LVCMOS18 | 61
+PIN | faddr<0> | 536871040 | 0 | LVCMOS18 | 71
+PIN | faddr<1> | 536871040 | 0 | LVCMOS18 | 72
+PIN | fdata<0> | 536871040 | 0 | LVCMOS18 | 23
+PIN | fdata<1> | 536871040 | 0 | LVCMOS18 | 25
+PIN | fdata<2> | 536871040 | 0 | LVCMOS18 | 26
+PIN | fdata<3> | 536871040 | 0 | LVCMOS18 | 31
+PIN | fdata<4> | 536871040 | 0 | LVCMOS18 | 32
+PIN | fdata<5> | 536871040 | 0 | LVCMOS18 | 38
+PIN | fdata<6> | 536871040 | 0 | LVCMOS18 | 46
+PIN | fdata<7> | 536871040 | 0 | LVCMOS18 | 48
+PIN | sloe | 536871040 | 0 | LVCMOS18 | 2
+PIN | slrd | 536871040 | 0 | LVCMOS18 | 73
+PIN | slwr | 536871040 | 0 | LVCMOS18 | 78

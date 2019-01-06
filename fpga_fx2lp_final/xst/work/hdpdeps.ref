@@ -1,0 +1,30 @@
+V3 14
+FL C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/compile/top.vhd 2018/01/23.07:16:42 P.20131013
+EN work/top 1516666636 \
+      FL C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/compile/top.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_SIGNED 1381692178 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/top/behavior 1516666637 \
+      FL C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/compile/top.vhd \
+      EN work/top 1516666636 CP gen_clock_data_appear CP fifo_stream_in
+FL C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/combine_data.vhd 2018/01/23.06:03:06 P.20131013
+EN work/combine_data 1516662573 \
+      FL C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/combine_data.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/combine_data/combine_data_behavior 1516662574 \
+      FL C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/combine_data.vhd \
+      EN work/combine_data 1516662573
+FL C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/fpga_fx2lp_final.vhd 2018/01/28.22:43:29 P.20131013
+EN work/fifo_stream_in 1517154214 \
+      FL C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/fpga_fx2lp_final.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/fifo_stream_in/fifo_stream_in_arch 1517154215 \
+      FL C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/fpga_fx2lp_final.vhd \
+      EN work/fifo_stream_in 1517154214
+FL C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/gen_clock_data_appear.vhd 2018/01/23.07:14:00 P.20131013
+EN work/gen_clock_data_appear 1516666632 \
+      FL C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/gen_clock_data_appear.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/gen_clock_data_appear/behavior 1516666633 \
+      FL C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/gen_clock_data_appear.vhd \
+      EN work/gen_clock_data_appear 1516666632

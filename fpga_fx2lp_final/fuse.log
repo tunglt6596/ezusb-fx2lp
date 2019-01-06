@@ -1,0 +1,18 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in_isim_beh.exe -prj C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in_beh.prj work.fifo_stream_in 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/../../../../../../../My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/fpga_fx2lp_final.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture fifo_stream_in_arch of entity fifo_stream_in
+Time Resolution for simulation is 1ps.
+Compiled 5 VHDL Units
+Built simulation executable C:/Users/TungLT/Desktop/Recycle Bin/DEMO_FINAL_FPGA_FX2LP/STREAM_IN/fpga_fx2lp_final/fifo_stream_in_isim_beh.exe
+Fuse Memory Usage: 32124 KB
+Fuse CPU Usage: 608 ms

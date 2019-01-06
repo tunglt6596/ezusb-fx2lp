@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE Document [
+
+
+<!ELEMENT Document (Net*, Globals*, Lb+)>
+<!ATTLIST Document
+	Version CDATA #REQUIRED
+	Module CDATA #REQUIRED
+	Date CDATA #REQUIRED
+	Device CDATA #REQUIRED
+        Stepping CDATA #IMPLIED
+>
+
+<!ELEMENT Globals (InBuf*, GlblBuf*, ClkDiv*, SDot*)>
+
+<!ELEMENT Net (Activity?)>
+<!ATTLIST Net
+	NNm CDATA #REQUIRED
+	IoT (in | out | bidi | none) #REQUIRED
+	Loc CDATA #IMPLIED
+	ClkT (G | U) #IMPLIED
+	SNm CDATA #IMPLIED
+>
+
+<!ELEMENT Activity EMPTY>
+<!ATTLIST Activity
+	Freq CDATA #IMPLIED
+	DutyCycle CDATA #IMPLIED
+>
+
+
+
+<!ELEMENT InBuf (IPort, OPort*)>
+<!ATTLIST InBuf
+	Nm CDATA #REQUIRED
+	IOS (LVTTL | LVCMOS15 | LVCMOS18 | LVCMOS25 | LVCMOS33 | HSTL_I | SSTL2_I | SSTL3_I | STRIG) #REQUIRED
+	DataGate (Y | N) #REQUIRED
+>
+
+<!ELEMENT GlblBuf (IPort)>
+<!ATTLIST GlblBuf
+	Nm CDATA #REQUIRED
+	GType (GOE | GSR | GCK | GCK2 | CDRST | GDGATE) #REQUIRED
+>
+
+<!ELEMENT ClkDiv (IPort, OPort)>
+<!ATTLIST ClkDiv
+	Nm CDATA #REQUIRED
+	DivideBy (2 | 4 | 6 | 8 | 10 | 12 | 14 | 16) #REQUIRED
+>
+
+<!ELEMENT SDot (IPort, OPort)>
+<!ATTLIST SDot
+	Nm CDATA #REQUIRED
+>
+
+
+<!ELEMENT Lb (LbT*, Mc*, SDot*)>
+<!ATTLIST Lb
+	Nm CDATA #REQUIRED
+>
+
+<!ELEMENT LbT (OPort, IPort+)>
+<!ATTLIST LbT
+	Nm CDATA #REQUIRED
+	PtT (XBR_A | XBR_B | XBR_C | XBR_CT | XBR_CT_X) #REQUIRED
+>
+
+<!ELEMENT Mc (RMux*, ClkMux?, XorMux?, OeMux?, FbMux*, InBuf?, OutBuf?, DFlop?, Or?, SDot*)>
+<!ATTLIST Mc
+	Nm CDATA #REQUIRED
+>
+
+<!ELEMENT Or (OPort, IPort+)>
+<!ATTLIST Or
+	Nm CDATA #REQUIRED
+>
+
+<!ELEMENT ClkMux (IPort, OPort)>
+<!ATTLIST ClkMux
+	Nm CDATA #REQUIRED
+	Rate (1 | 2) #IMPLIED
+>
+
+<!ELEMENT RMux (IPort)>
+<!ATTLIST RMux
+	Nm CDATA #REQUIRED
+>
+
+<!ELEMENT OeMux (IPort)>
+<!ATTLIST OeMux
+	Nm CDATA #REQUIRED
+>
+
+<!ELEMENT XorMux (IPort)>
+<!ATTLIST XorMux
+	Nm CDATA #REQUIRED
+>
+
+<!ELEMENT FbMux (IPort)>
+<!ATTLIST FbMux
+	Nm CDATA #REQUIRED
+>
+
+<!ELEMENT OutBuf (IPort, OPort, CntlPort*)>
+<!ATTLIST OutBuf
+	Nm CDATA #REQUIRED
+	IOS (LVTTL | LVCMOS15 | LVCMOS18 | LVCMOS25 | LVCMOS33 | HSTL_I | SSTL2_I | SSTL3_I | STRIG) #REQUIRED
+>
+
+<!ELEMENT DFlop (FlopPort+)>
+<!ATTLIST DFlop
+	Nm CDATA #REQUIRED
+>
+
+
+<!ELEMENT FlopPort EMPTY>
+<!ATTLIST FlopPort
+	NNm CDATA #REQUIRED
+	Port (D | CLK | Q | RST | PST | CE) #REQUIRED
+>
+
+<!ELEMENT IPort EMPTY>
+<!ATTLIST IPort
+	NNm CDATA #REQUIRED
+>
+
+<!ELEMENT OPort EMPTY>
+<!ATTLIST OPort
+	NNm CDATA #REQUIRED
+>
+
+<!ELEMENT CntlPort EMPTY>
+<!ATTLIST CntlPort
+	NNm CDATA #REQUIRED
+>
+]>
+<Document Date="Apr 25 15:01:06 2018" Device="XC2C64A-7VQ44" Module="fifo_in" Stepping="0" Version="3"><Net IoT="in" Loc="FB4_15" NNm="flagd" SNm="flagd"/><Net IoT="none" NNm="FB4_15_I" SNm="flagd_II/UIM"/><Net IoT="none" NNm="FB2_10_Q" SNm="fdata&lt;0&gt;_MC.UIM"/><Net IoT="none" NNm="FB2_12_Q" SNm="fdata&lt;1&gt;_MC.UIM"/><Net IoT="none" NNm="FB2_13_Q" SNm="fdata&lt;2&gt;_MC.UIM"/><Net IoT="none" NNm="FB4_1_Q" SNm="fdata&lt;3&gt;_MC.UIM"/><Net IoT="none" NNm="FB1_PT10" SNm="FB1_PT10"/><Net IoT="none" NNm="FB4_2_Q" SNm="fdata&lt;4&gt;_MC.UIM"/><Net IoT="none" NNm="FB1_PT11" SNm="FB1_PT11"/><Net IoT="none" NNm="FB4_7_Q" SNm="fdata&lt;5&gt;_MC.UIM"/><Net IoT="none" NNm="FB1_PT12" SNm="FB1_PT12"/><Net IoT="none" NNm="FB4_11_Q" SNm="fdata&lt;6&gt;_MC.UIM"/><Net IoT="none" NNm="FB4_PT10" SNm="fdata&lt;3&gt;_MC.D"/><Net IoT="none" NNm="FB4_13_Q" SNm="fdata&lt;7&gt;_MC.UIM"/><Net IoT="none" NNm="FB1_PT52" SNm="current_state&lt;1&gt;_MC.D"/><Net IoT="none" NNm="FB4_PT13" SNm="fdata&lt;4&gt;_MC.D"/><Net IoT="none" NNm="FB4_PT40" SNm="fdata&lt;6&gt;_MC.D"/><Net IoT="none" NNm="FB2_PT43" SNm="fdata&lt;1&gt;_MC.D"/><Net IoT="none" NNm="FB1_PT28" SNm="FB1_PT28"/><Net IoT="none" NNm="FB1_PT46" SNm="slwr_MC.D"/><Net IoT="none" NNm="FB1_PT55" SNm="FB1_PT55"/><Net IoT="none" NNm="FB2_PT37" SNm="fdata&lt;0&gt;_MC.D"/><Net IoT="none" NNm="FB2_PT46" SNm="fdata&lt;2&gt;_MC.D"/><Net IoT="none" NNm="FB3_PT37" SNm="clk_out_MC.Q"/><Net IoT="none" NNm="FB1_PT49" SNm="current_state&lt;3&gt;_MC.D"/><Net IoT="none" NNm="FB4_PT28" SNm="fdata&lt;5&gt;_MC.D"/><Net IoT="none" NNm="FB4_PT46" SNm="fdata&lt;7&gt;_MC.D"/><Net IoT="none" NNm="FB1_7_Q" SNm="current_state&lt;0&gt;_MC.Q"/><Net IoT="none" NNm="FB1_15_Q" SNm="current_state&lt;1&gt;_MC.Q"/><Net IoT="none" NNm="FB1_8_Q" SNm="current_state&lt;2&gt;_MC.Q"/><Net IoT="none" NNm="FB1_14_Q" SNm="current_state&lt;3&gt;_MC.Q"/><Net IoT="none" NNm="FB1_16_Q" SNm="current_state&lt;4&gt;_MC.Q"/><Net IoT="none" NNm="FB1_13_Q" SNm="slwr_MC.Q"/><Net IoT="in" Loc="FB2_2" NNm="clk" SNm="clk"/><Net IoT="none" NNm="FB2_2_I" SNm="clk_II/UIM"/><Net IoT="none" NNm="FB1_7_OR" SNm="current_state&lt;0&gt;_MC.D"/><Net IoT="none" NNm="FB1_8_OR" SNm="current_state&lt;2&gt;_MC.D"/><Net IoT="none" NNm="FB4_1_MC_CLK" SNm="FB4_1_MC_CLK"/><Net IoT="none" NNm="FB4_2_MC_CLK" SNm="FB4_2_MC_CLK"/><Net IoT="none" NNm="FB1_7_MC_CLK" SNm="FB1_7_MC_CLK"/><Net IoT="none" NNm="FB1_8_MC_CLK" SNm="FB1_8_MC_CLK"/><Net IoT="none" NNm="FB4_7_MC_CLK" SNm="FB4_7_MC_CLK"/><Net IoT="none" NNm="FB2_10_MC_CLK" SNm="FB2_10_MC_CLK"/><Net IoT="none" NNm="FB1_13_MC_CLK" SNm="FB1_13_MC_CLK"/><Net IoT="none" NNm="FB2_12_MC_CLK" SNm="FB2_12_MC_CLK"/><Net IoT="none" NNm="FB1_14_MC_CLK" SNm="FB1_14_MC_CLK"/><Net IoT="none" NNm="FB2_13_MC_CLK" SNm="FB2_13_MC_CLK"/><Net IoT="none" NNm="FB4_11_MC_CLK" SNm="FB4_11_MC_CLK"/><Net IoT="none" NNm="FB1_15_MC_CLK" SNm="FB1_15_MC_CLK"/><Net IoT="none" NNm="FB1_16_MC_CLK" SNm="FB1_16_MC_CLK"/><Net IoT="none" NNm="FB4_13_MC_CLK" SNm="FB4_13_MC_CLK"/><Net IoT="out" Loc="FB2_10" NNm="fdata&lt;0&gt;" SNm="fdata&lt;0&gt;"/><Net IoT="out" Loc="FB3_3" NNm="faddr&lt;0&gt;" SNm="faddr&lt;0&gt;"/><Net IoT="out" Loc="FB2_12" NNm="fdata&lt;1&gt;" SNm="fdata&lt;1&gt;"/><Net IoT="out" Loc="FB3_2" NNm="faddr&lt;1&gt;" SNm="faddr&lt;1&gt;"/><Net IoT="out" Loc="FB2_13" NNm="fdata&lt;2&gt;" SNm="fdata&lt;2&gt;"/><Net IoT="out" Loc="FB4_1" NNm="fdata&lt;3&gt;" SNm="fdata&lt;3&gt;"/><Net IoT="out" Loc="FB4_2" NNm="fdata&lt;4&gt;" SNm="fdata&lt;4&gt;"/><Net IoT="out" Loc="FB4_7" NNm="fdata&lt;5&gt;" SNm="fdata&lt;5&gt;"/><Net IoT="out" Loc="FB4_11" NNm="fdata&lt;6&gt;" SNm="fdata&lt;6&gt;"/><Net IoT="out" Loc="FB4_13" NNm="fdata&lt;7&gt;" SNm="fdata&lt;7&gt;"/><Net IoT="out" Loc="FB1_9" NNm="sloe" SNm="sloe"/><Net IoT="out" Loc="FB3_1" NNm="slrd" SNm="slrd"/><Net IoT="out" Loc="FB1_13" NNm="slwr" SNm="slwr"/><Net IoT="none" NNm="PT_GND" SNm="faddr&lt;0&gt;_MC.Q"/><Net IoT="none" NNm="FB1_PT0" SNm="FB1_PT0"/><Net IoT="none" NNm="FB1_PT1" SNm="FB1_PT1"/><Net IoT="none" NNm="FB1_PT2" SNm="FB1_PT2"/><Net IoT="none" NNm="FB1_PT3" SNm="FB1_PT3"/><Net IoT="none" NNm="FB1_PT4" SNm="FOOBAR1__ctinst/4"/><Net IoT="none" NNm="FB2_PT4" SNm="FOOBAR2__ctinst/4"/><Net IoT="none" NNm="FB1_PT5" SNm="FB1_PT5"/><Net IoT="out" Loc="FB3_10" NNm="clk_out" SNm="clk_out"/><Net IoT="none" NNm="FB1_PT6" SNm="FB1_PT6"/><Net IoT="none" NNm="FB4_PT4" SNm="FOOBAR4__ctinst/4"/><Net IoT="none" NNm="FB1_PT7" SNm="FB1_PT7"/><Net IoT="none" NNm="FB1_PT8" SNm="FB1_PT8"/><Net IoT="none" NNm="FB1_PT9" SNm="FB1_PT9"/><Globals/><Lb Nm="FB1"><LbT Nm="FB1_PT0" PtT="XBR_CT_X"><OPort NNm="FB1_PT0"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_14_Q"/></LbT><LbT Nm="FB1_PT1" PtT="XBR_CT_X"><OPort NNm="FB1_PT1"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB2_10_Q"/><IPort NNm="FB2_12_Q"/><IPort NNm="FB2_13_Q"/><IPort NNm="FB4_1_Q"/><IPort NNm="FB4_2_Q"/><IPort NNm="FB4_7_Q"/><IPort NNm="FB4_11_Q"/><IPort NNm="FB4_13_Q"/></LbT><LbT Nm="FB1_PT2" PtT="XBR_CT_X"><OPort NNm="FB1_PT2"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/></LbT><LbT Nm="FB1_PT3" PtT="XBR_CT_X"><OPort NNm="FB1_PT3"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/></LbT><LbT Nm="FB1_PT4" PtT="XBR_CT"><OPort NNm="FB1_PT4"/><IPort NNm="FB2_2_I"/></LbT><LbT Nm="FB1_PT5" PtT="XBR_CT"><OPort NNm="FB1_PT5"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_7_Q"/></LbT><LbT Nm="FB1_PT6" PtT="XBR_CT"><OPort NNm="FB1_PT6"/><IPort NNm="FB4_15_I"/><IPort NNm="FB1_14_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB1_7_Q"/></LbT><LbT Nm="FB1_PT7" PtT="XBR_CT"><OPort NNm="FB1_PT7"/><IPort NNm="FB1_14_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/></LbT><LbT Nm="FB1_PT8" PtT="XBR_A"><OPort NNm="FB1_PT8"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_7_Q"/></LbT><LbT Nm="FB1_PT9" PtT="XBR_B"><OPort NNm="FB1_PT9"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_14_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_7_Q"/></LbT><LbT Nm="FB1_PT10" PtT="XBR_C"><OPort NNm="FB1_PT10"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB1_7_Q"/><IPort NNm="FB2_10_Q"/><IPort NNm="FB2_12_Q"/><IPort NNm="FB2_13_Q"/><IPort NNm="FB4_1_Q"/><IPort NNm="FB4_2_Q"/><IPort NNm="FB4_7_Q"/><IPort NNm="FB4_11_Q"/><IPort NNm="FB4_13_Q"/></LbT><LbT Nm="FB1_PT11" PtT="XBR_A"><OPort NNm="FB1_PT11"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB1_7_Q"/></LbT><LbT Nm="FB1_PT12" PtT="XBR_B"><OPort NNm="FB1_PT12"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_14_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB1_7_Q"/></LbT><LbT Nm="FB1_PT28" PtT="XBR_C"><OPort NNm="FB1_PT28"/><IPort NNm="FB1_8_Q"/></LbT><LbT Nm="FB1_PT46" PtT="XBR_C"><OPort NNm="FB1_PT46"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_14_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB1_7_Q"/></LbT><LbT Nm="FB1_PT49" PtT="XBR_C"><OPort NNm="FB1_PT49"/><IPort NNm="FB4_15_I"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_14_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB1_7_Q"/></LbT><LbT Nm="FB1_PT52" PtT="XBR_C"><OPort NNm="FB1_PT52"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_14_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB1_7_Q"/></LbT><LbT Nm="FB1_PT55" PtT="XBR_C"><OPort NNm="FB1_PT55"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_14_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB1_7_Q"/></LbT><Mc Nm="FB1_1"/><Mc Nm="FB1_2"/><Mc Nm="FB1_3"/><Mc Nm="FB1_4"/><Mc Nm="FB1_5"/><Mc Nm="FB1_6"/><Mc Nm="FB1_7"><ClkMux Nm="FB1_7_MC_CLK" Rate="1"><IPort NNm="FB1_PT4"/><OPort NNm="FB1_7_MC_CLK"/></ClkMux><XorMux Nm="FB1_7_AND"><IPort NNm="FB1_7_OR"/></XorMux><FbMux Nm="FB1_7_N"><IPort NNm="FB1_7_Q"/></FbMux><DFlop Nm="FB1_7_FF"><FlopPort NNm="FB1_7_OR" Port="D"/><FlopPort NNm="FB1_7_MC_CLK" Port="CLK"/><FlopPort NNm="FB1_7_Q" Port="Q"/><FlopPort NNm="PT_GND" Port="RST"/><FlopPort NNm="PT_GND" Port="PST"/></DFlop><Or Nm="FB1_7_OR"><OPort NNm="FB1_7_OR"/><IPort NNm="FB1_PT8"/><IPort NNm="FB1_PT7"/><IPort NNm="FB1_PT9"/><IPort NNm="FB1_PT12"/><IPort NNm="FB1_PT11"/><IPort NNm="FB1_PT10"/><IPort NNm="FB1_PT28"/></Or></Mc><Mc Nm="FB1_8"><ClkMux Nm="FB1_8_MC_CLK" Rate="1"><IPort NNm="FB1_PT4"/><OPort NNm="FB1_8_MC_CLK"/></ClkMux><FbMux Nm="FB1_8_N"><IPort NNm="FB1_8_Q"/></FbMux><DFlop Nm="FB1_8_FF"><FlopPort NNm="FB1_8_OR" Port="D"/><FlopPort NNm="FB1_8_MC_CLK" Port="CLK"/><FlopPort NNm="FB1_8_Q" Port="Q"/><FlopPort NNm="PT_GND" Port="RST"/><FlopPort NNm="PT_GND" Port="PST"/></DFlop><Or Nm="FB1_8_OR"><OPort NNm="FB1_8_OR"/><IPort NNm="FB1_PT0"/><IPort NNm="FB1_PT5"/><IPort NNm="FB1_PT2"/><IPort NNm="FB1_PT3"/><IPort NNm="FB1_PT6"/><IPort NNm="FB1_PT1"/></Or></Mc><Mc Nm="FB1_9"><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB1_9_I"><IPort NNm="sloe"/></InBuf><OutBuf IOS="LVCMOS18" Nm="FB1_9_O"><IPort NNm="PT_GND"/><OPort NNm="sloe"/><CntlPort NNm="PT_VCC"/></OutBuf></Mc><Mc Nm="FB1_10"/><Mc Nm="FB1_11"/><Mc Nm="FB1_12"/><Mc Nm="FB1_13"><ClkMux Nm="FB1_13_MC_CLK" Rate="1"><IPort NNm="FB1_PT4"/><OPort NNm="FB1_13_MC_CLK"/></ClkMux><XorMux Nm="FB1_13_AND"><IPort NNm="FB1_PT46"/></XorMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB1_13_I"><IPort NNm="slwr"/></InBuf><OutBuf IOS="LVCMOS18" Nm="FB1_13_O"><IPort NNm="FB1_13_Q"/><OPort NNm="slwr"/><CntlPort NNm="PT_VCC"/></OutBuf><DFlop Nm="FB1_13_FF"><FlopPort NNm="FB1_PT46" Port="D"/><FlopPort NNm="FB1_13_MC_CLK" Port="CLK"/><FlopPort NNm="FB1_13_Q" Port="Q"/><FlopPort NNm="PT_GND" Port="RST"/><FlopPort NNm="PT_GND" Port="PST"/></DFlop></Mc><Mc Nm="FB1_14"><ClkMux Nm="FB1_14_MC_CLK" Rate="1"><IPort NNm="FB1_PT4"/><OPort NNm="FB1_14_MC_CLK"/></ClkMux><XorMux Nm="FB1_14_AND"><IPort NNm="FB1_PT49"/></XorMux><FbMux Nm="FB1_14_N"><IPort NNm="FB1_14_Q"/></FbMux><DFlop Nm="FB1_14_FF"><FlopPort NNm="FB1_PT49" Port="D"/><FlopPort NNm="FB1_14_MC_CLK" Port="CLK"/><FlopPort NNm="FB1_14_Q" Port="Q"/><FlopPort NNm="PT_GND" Port="RST"/><FlopPort NNm="PT_GND" Port="PST"/></DFlop></Mc><Mc Nm="FB1_15"><ClkMux Nm="FB1_15_MC_CLK" Rate="1"><IPort NNm="FB1_PT4"/><OPort NNm="FB1_15_MC_CLK"/></ClkMux><XorMux Nm="FB1_15_AND"><IPort NNm="FB1_PT52"/></XorMux><FbMux Nm="FB1_15_N"><IPort NNm="FB1_15_Q"/></FbMux><DFlop Nm="FB1_15_FF"><FlopPort NNm="FB1_PT52" Port="D"/><FlopPort NNm="FB1_15_MC_CLK" Port="CLK"/><FlopPort NNm="FB1_15_Q" Port="Q"/><FlopPort NNm="PT_GND" Port="RST"/><FlopPort NNm="PT_GND" Port="PST"/></DFlop></Mc><Mc Nm="FB1_16"><ClkMux Nm="FB1_16_MC_CLK" Rate="1"><IPort NNm="FB1_PT4"/><OPort NNm="FB1_16_MC_CLK"/></ClkMux><XorMux Nm="FB1_16_AND"><IPort NNm="FB1_PT46"/></XorMux><FbMux Nm="FB1_16_N"><IPort NNm="FB1_16_Q"/></FbMux><DFlop Nm="FB1_16_FF"><FlopPort NNm="FB1_PT46" Port="D"/><FlopPort NNm="FB1_16_MC_CLK" Port="CLK"/><FlopPort NNm="FB1_16_Q" Port="Q"/><FlopPort NNm="PT_GND" Port="RST"/><FlopPort NNm="PT_GND" Port="PST"/></DFlop></Mc></Lb><Lb Nm="FB2"><LbT Nm="FB2_PT4" PtT="XBR_CT"><OPort NNm="FB2_PT4"/><IPort NNm="FB2_2_I"/></LbT><LbT Nm="FB2_PT37" PtT="XBR_C"><OPort NNm="FB2_PT37"/><IPort NNm="FB4_15_I"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_14_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB1_7_Q"/></LbT><LbT Nm="FB2_PT43" PtT="XBR_C"><OPort NNm="FB2_PT43"/><IPort NNm="FB4_15_I"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_14_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB1_7_Q"/><IPort NNm="FB2_10_Q"/></LbT><LbT Nm="FB2_PT46" PtT="XBR_C"><OPort NNm="FB2_PT46"/><IPort NNm="FB4_15_I"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_14_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB1_7_Q"/><IPort NNm="FB2_10_Q"/><IPort NNm="FB2_12_Q"/></LbT><Mc Nm="FB2_1"/><Mc Nm="FB2_2"><FbMux Nm="FB2_2_P"><IPort NNm="FB2_2_I"/></FbMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB2_2_I"><IPort NNm="clk"/><OPort NNm="FB2_2_I"/></InBuf></Mc><Mc Nm="FB2_3"/><Mc Nm="FB2_4"/><Mc Nm="FB2_5"/><Mc Nm="FB2_6"/><Mc Nm="FB2_7"/><Mc Nm="FB2_8"/><Mc Nm="FB2_9"/><Mc Nm="FB2_10"><ClkMux Nm="FB2_10_MC_CLK" Rate="1"><IPort NNm="FB2_PT4"/><OPort NNm="FB2_10_MC_CLK"/></ClkMux><XorMux Nm="FB2_10_AND"><IPort NNm="FB2_PT37"/></XorMux><FbMux Nm="FB2_10_N"><IPort NNm="FB2_10_Q"/></FbMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB2_10_I"><IPort NNm="fdata&lt;0&gt;"/></InBuf><OutBuf IOS="LVCMOS18" Nm="FB2_10_O"><IPort NNm="FB2_10_Q"/><OPort NNm="fdata&lt;0&gt;"/><CntlPort NNm="PT_VCC"/></OutBuf><DFlop Nm="FB2_10_FF"><FlopPort NNm="FB2_PT37" Port="D"/><FlopPort NNm="FB2_10_MC_CLK" Port="CLK"/><FlopPort NNm="FB2_10_Q" Port="Q"/><FlopPort NNm="PT_GND" Port="RST"/><FlopPort NNm="PT_GND" Port="PST"/></DFlop></Mc><Mc Nm="FB2_11"/><Mc Nm="FB2_12"><ClkMux Nm="FB2_12_MC_CLK" Rate="1"><IPort NNm="FB2_PT4"/><OPort NNm="FB2_12_MC_CLK"/></ClkMux><XorMux Nm="FB2_12_AND"><IPort NNm="FB2_PT43"/></XorMux><FbMux Nm="FB2_12_N"><IPort NNm="FB2_12_Q"/></FbMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB2_12_I"><IPort NNm="fdata&lt;1&gt;"/></InBuf><OutBuf IOS="LVCMOS18" Nm="FB2_12_O"><IPort NNm="FB2_12_Q"/><OPort NNm="fdata&lt;1&gt;"/><CntlPort NNm="PT_VCC"/></OutBuf><DFlop Nm="FB2_12_FF"><FlopPort NNm="FB2_PT43" Port="D"/><FlopPort NNm="FB2_12_MC_CLK" Port="CLK"/><FlopPort NNm="FB2_12_Q" Port="Q"/><FlopPort NNm="PT_GND" Port="RST"/><FlopPort NNm="PT_GND" Port="PST"/></DFlop></Mc><Mc Nm="FB2_13"><ClkMux Nm="FB2_13_MC_CLK" Rate="1"><IPort NNm="FB2_PT4"/><OPort NNm="FB2_13_MC_CLK"/></ClkMux><XorMux Nm="FB2_13_AND"><IPort NNm="FB2_PT46"/></XorMux><FbMux Nm="FB2_13_N"><IPort NNm="FB2_13_Q"/></FbMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB2_13_I"><IPort NNm="fdata&lt;2&gt;"/></InBuf><OutBuf IOS="LVCMOS18" Nm="FB2_13_O"><IPort NNm="FB2_13_Q"/><OPort NNm="fdata&lt;2&gt;"/><CntlPort NNm="PT_VCC"/></OutBuf><DFlop Nm="FB2_13_FF"><FlopPort NNm="FB2_PT46" Port="D"/><FlopPort NNm="FB2_13_MC_CLK" Port="CLK"/><FlopPort NNm="FB2_13_Q" Port="Q"/><FlopPort NNm="PT_GND" Port="RST"/><FlopPort NNm="PT_GND" Port="PST"/></DFlop></Mc><Mc Nm="FB2_14"/><Mc Nm="FB2_15"/><Mc Nm="FB2_16"/></Lb><Lb Nm="FB3"><LbT Nm="FB3_PT37" PtT="XBR_C"><OPort NNm="FB3_PT37"/><IPort NNm="FB2_2_I"/></LbT><Mc Nm="FB3_1"><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB3_1_I"><IPort NNm="slrd"/></InBuf><OutBuf IOS="LVCMOS18" Nm="FB3_1_O"><IPort NNm="PT_GND"/><OPort NNm="slrd"/><CntlPort NNm="PT_VCC"/></OutBuf></Mc><Mc Nm="FB3_2"><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB3_2_I"><IPort NNm="faddr&lt;1&gt;"/></InBuf><OutBuf IOS="LVCMOS18" Nm="FB3_2_O"><IPort NNm="PT_GND"/><OPort NNm="faddr&lt;1&gt;"/><CntlPort NNm="PT_VCC"/></OutBuf></Mc><Mc Nm="FB3_3"><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB3_3_I"><IPort NNm="faddr&lt;0&gt;"/></InBuf><OutBuf IOS="LVCMOS18" Nm="FB3_3_O"><IPort NNm="PT_GND"/><OPort NNm="faddr&lt;0&gt;"/><CntlPort NNm="PT_VCC"/></OutBuf></Mc><Mc Nm="FB3_4"/><Mc Nm="FB3_5"/><Mc Nm="FB3_6"/><Mc Nm="FB3_7"/><Mc Nm="FB3_8"/><Mc Nm="FB3_9"/><Mc Nm="FB3_10"><XorMux Nm="FB3_10_AND"><IPort NNm="FB3_PT37"/></XorMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB3_10_I"><IPort NNm="clk_out"/></InBuf><OutBuf IOS="LVCMOS18" Nm="FB3_10_O"><IPort NNm="FB3_PT37"/><OPort NNm="clk_out"/><CntlPort NNm="PT_VCC"/></OutBuf></Mc><Mc Nm="FB3_11"/><Mc Nm="FB3_12"/><Mc Nm="FB3_13"/><Mc Nm="FB3_14"/><Mc Nm="FB3_15"/><Mc Nm="FB3_16"/></Lb><Lb Nm="FB4"><LbT Nm="FB4_PT4" PtT="XBR_CT"><OPort NNm="FB4_PT4"/><IPort NNm="FB2_2_I"/></LbT><LbT Nm="FB4_PT10" PtT="XBR_C"><OPort NNm="FB4_PT10"/><IPort NNm="FB4_15_I"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_14_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB1_7_Q"/><IPort NNm="FB2_10_Q"/><IPort NNm="FB2_12_Q"/><IPort NNm="FB2_13_Q"/></LbT><LbT Nm="FB4_PT13" PtT="XBR_C"><OPort NNm="FB4_PT13"/><IPort NNm="FB4_15_I"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_14_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB1_7_Q"/><IPort NNm="FB2_10_Q"/><IPort NNm="FB2_12_Q"/><IPort NNm="FB2_13_Q"/><IPort NNm="FB4_1_Q"/></LbT><LbT Nm="FB4_PT28" PtT="XBR_C"><OPort NNm="FB4_PT28"/><IPort NNm="FB4_15_I"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_14_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB1_7_Q"/><IPort NNm="FB2_10_Q"/><IPort NNm="FB2_12_Q"/><IPort NNm="FB2_13_Q"/><IPort NNm="FB4_1_Q"/><IPort NNm="FB4_2_Q"/></LbT><LbT Nm="FB4_PT40" PtT="XBR_C"><OPort NNm="FB4_PT40"/><IPort NNm="FB4_15_I"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_14_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB1_7_Q"/><IPort NNm="FB2_10_Q"/><IPort NNm="FB2_12_Q"/><IPort NNm="FB2_13_Q"/><IPort NNm="FB4_1_Q"/><IPort NNm="FB4_2_Q"/><IPort NNm="FB4_7_Q"/></LbT><LbT Nm="FB4_PT46" PtT="XBR_C"><OPort NNm="FB4_PT46"/><IPort NNm="FB4_15_I"/><IPort NNm="FB1_8_Q"/><IPort NNm="FB1_14_Q"/><IPort NNm="FB1_15_Q"/><IPort NNm="FB1_16_Q"/><IPort NNm="FB1_7_Q"/><IPort NNm="FB2_10_Q"/><IPort NNm="FB2_12_Q"/><IPort NNm="FB2_13_Q"/><IPort NNm="FB4_1_Q"/><IPort NNm="FB4_2_Q"/><IPort NNm="FB4_7_Q"/><IPort NNm="FB4_11_Q"/></LbT><Mc Nm="FB4_1"><ClkMux Nm="FB4_1_MC_CLK" Rate="1"><IPort NNm="FB4_PT4"/><OPort NNm="FB4_1_MC_CLK"/></ClkMux><XorMux Nm="FB4_1_AND"><IPort NNm="FB4_PT10"/></XorMux><FbMux Nm="FB4_1_N"><IPort NNm="FB4_1_Q"/></FbMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB4_1_I"><IPort NNm="fdata&lt;3&gt;"/></InBuf><OutBuf IOS="LVCMOS18" Nm="FB4_1_O"><IPort NNm="FB4_1_Q"/><OPort NNm="fdata&lt;3&gt;"/><CntlPort NNm="PT_VCC"/></OutBuf><DFlop Nm="FB4_1_FF"><FlopPort NNm="FB4_PT10" Port="D"/><FlopPort NNm="FB4_1_MC_CLK" Port="CLK"/><FlopPort NNm="FB4_1_Q" Port="Q"/><FlopPort NNm="PT_GND" Port="RST"/><FlopPort NNm="PT_GND" Port="PST"/></DFlop></Mc><Mc Nm="FB4_2"><ClkMux Nm="FB4_2_MC_CLK" Rate="1"><IPort NNm="FB4_PT4"/><OPort NNm="FB4_2_MC_CLK"/></ClkMux><XorMux Nm="FB4_2_AND"><IPort NNm="FB4_PT13"/></XorMux><FbMux Nm="FB4_2_N"><IPort NNm="FB4_2_Q"/></FbMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB4_2_I"><IPort NNm="fdata&lt;4&gt;"/></InBuf><OutBuf IOS="LVCMOS18" Nm="FB4_2_O"><IPort NNm="FB4_2_Q"/><OPort NNm="fdata&lt;4&gt;"/><CntlPort NNm="PT_VCC"/></OutBuf><DFlop Nm="FB4_2_FF"><FlopPort NNm="FB4_PT13" Port="D"/><FlopPort NNm="FB4_2_MC_CLK" Port="CLK"/><FlopPort NNm="FB4_2_Q" Port="Q"/><FlopPort NNm="PT_GND" Port="RST"/><FlopPort NNm="PT_GND" Port="PST"/></DFlop></Mc><Mc Nm="FB4_3"/><Mc Nm="FB4_4"/><Mc Nm="FB4_5"/><Mc Nm="FB4_6"/><Mc Nm="FB4_7"><ClkMux Nm="FB4_7_MC_CLK" Rate="1"><IPort NNm="FB4_PT4"/><OPort NNm="FB4_7_MC_CLK"/></ClkMux><XorMux Nm="FB4_7_AND"><IPort NNm="FB4_PT28"/></XorMux><FbMux Nm="FB4_7_N"><IPort NNm="FB4_7_Q"/></FbMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB4_7_I"><IPort NNm="fdata&lt;5&gt;"/></InBuf><OutBuf IOS="LVCMOS18" Nm="FB4_7_O"><IPort NNm="FB4_7_Q"/><OPort NNm="fdata&lt;5&gt;"/><CntlPort NNm="PT_VCC"/></OutBuf><DFlop Nm="FB4_7_FF"><FlopPort NNm="FB4_PT28" Port="D"/><FlopPort NNm="FB4_7_MC_CLK" Port="CLK"/><FlopPort NNm="FB4_7_Q" Port="Q"/><FlopPort NNm="PT_GND" Port="RST"/><FlopPort NNm="PT_GND" Port="PST"/></DFlop></Mc><Mc Nm="FB4_8"/><Mc Nm="FB4_9"/><Mc Nm="FB4_10"/><Mc Nm="FB4_11"><ClkMux Nm="FB4_11_MC_CLK" Rate="1"><IPort NNm="FB4_PT4"/><OPort NNm="FB4_11_MC_CLK"/></ClkMux><XorMux Nm="FB4_11_AND"><IPort NNm="FB4_PT40"/></XorMux><FbMux Nm="FB4_11_N"><IPort NNm="FB4_11_Q"/></FbMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB4_11_I"><IPort NNm="fdata&lt;6&gt;"/></InBuf><OutBuf IOS="LVCMOS18" Nm="FB4_11_O"><IPort NNm="FB4_11_Q"/><OPort NNm="fdata&lt;6&gt;"/><CntlPort NNm="PT_VCC"/></OutBuf><DFlop Nm="FB4_11_FF"><FlopPort NNm="FB4_PT40" Port="D"/><FlopPort NNm="FB4_11_MC_CLK" Port="CLK"/><FlopPort NNm="FB4_11_Q" Port="Q"/><FlopPort NNm="PT_GND" Port="RST"/><FlopPort NNm="PT_GND" Port="PST"/></DFlop></Mc><Mc Nm="FB4_12"/><Mc Nm="FB4_13"><ClkMux Nm="FB4_13_MC_CLK" Rate="1"><IPort NNm="FB4_PT4"/><OPort NNm="FB4_13_MC_CLK"/></ClkMux><XorMux Nm="FB4_13_AND"><IPort NNm="FB4_PT46"/></XorMux><FbMux Nm="FB4_13_N"><IPort NNm="FB4_13_Q"/></FbMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB4_13_I"><IPort NNm="fdata&lt;7&gt;"/></InBuf><OutBuf IOS="LVCMOS18" Nm="FB4_13_O"><IPort NNm="FB4_13_Q"/><OPort NNm="fdata&lt;7&gt;"/><CntlPort NNm="PT_VCC"/></OutBuf><DFlop Nm="FB4_13_FF"><FlopPort NNm="FB4_PT46" Port="D"/><FlopPort NNm="FB4_13_MC_CLK" Port="CLK"/><FlopPort NNm="FB4_13_Q" Port="Q"/><FlopPort NNm="PT_GND" Port="RST"/><FlopPort NNm="PT_GND" Port="PST"/></DFlop></Mc><Mc Nm="FB4_14"/><Mc Nm="FB4_15"><FbMux Nm="FB4_15_P"><IPort NNm="FB4_15_I"/></FbMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB4_15_I"><IPort NNm="flagd"/><OPort NNm="FB4_15_I"/></InBuf></Mc><Mc Nm="FB4_16"/></Lb></Document>

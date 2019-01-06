@@ -1,0 +1,13 @@
+AUTO_TS_P2P:FROM:clk:TO:slwr:1
+AUTO_TS_F2P:FROM:slwr_MC.Q:TO:slwr:1
+AUTO_TS_F2F:FROM:U2/current_state_FSM_FFd1_MC.Q:TO:slwr_MC.D:1
+AUTO_TS_F2F:FROM:U2/current_state_FSM_FFd2_MC.Q:TO:slwr_MC.D:1
+AUTO_TS_P2F:FROM:flagd:TO:slwr_MC.D:1
+AUTO_TS_P2F:FROM:clk:TO:slwr_MC.D:1
+AUTO_TS_F2F:FROM:U2/current_state_FSM_FFd2_MC.Q:TO:U2/current_state_FSM_FFd1_MC.D:1
+AUTO_TS_F2F:FROM:U2/current_state_FSM_FFd1_MC.Q:TO:U2/current_state_FSM_FFd1_MC.D:1
+AUTO_TS_P2F:FROM:flagd:TO:U2/current_state_FSM_FFd1_MC.D:1
+AUTO_TS_P2F:FROM:clk:TO:U2/current_state_FSM_FFd1_MC.D:1
+AUTO_TS_F2F:FROM:U2/current_state_FSM_FFd1_MC.Q:TO:U2/current_state_FSM_FFd2_MC.D:1
+AUTO_TS_P2F:FROM:clk:TO:U2/current_state_FSM_FFd2_MC.D:1
+AUTO_TS_P2F:FROM:clk:TO:FOOBAR1__ctinst/4:1

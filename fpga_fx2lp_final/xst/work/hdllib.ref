@@ -1,0 +1,9 @@
+AR top top_arch C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/compile/top.vhd sub00/vhpl05 1516654745
+MO fifo_stream_in NULL fifo_stream_in.v vlg45/fifo__stream__in.bin 1526343117
+EN gen_clock_data_appear NULL C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/gen_clock_data_appear.vhd sub00/vhpl07 1516666632
+EN top NULL C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/compile/top.vhd sub00/vhpl04 1516666636
+AR fifo_stream_in fifo_stream_in_arch C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/fpga_fx2lp_final.vhd sub00/vhpl03 1517154215
+EN combine_data NULL C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/combine_data.vhd sub00/vhpl00 1516662573
+AR gen_clock_data_appear behavior C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/gen_clock_data_appear.vhd sub00/vhpl08 1516666633
+AR combine_data combine_data_behavior C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/src/combine_data.vhd sub00/vhpl01 1516662574
+AR top behavior C:/My_Designs/fpga_fx2lp_final/fpga_fx2lp_final/compile/top.vhd sub00/vhpl06 1516666637

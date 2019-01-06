@@ -1,0 +1,530 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xbr | 2C64A44VQ | XC2C64A-7-VQ44
+
+DEVICE | 2C64A | 2C64A44VQ | 
+
+NETWORK | fifo_stream_in | 0 | 0 | 1073758214 | 0
+
+INPUT_INSTANCE | 0 | 0 | NULL | clk_II | fifo_stream_in_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clk | 477 | PI | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | clk_II/UIM | 481 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | clk_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | NULL | clk_o_MC | fifo_stream_in_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_II/UIM | 481 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | clk_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | clk_o_MC.Q | 483 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | clk_o_MC.Q | clk_o_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | clk_o_MC.SI | clk_o_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_II/UIM | 481 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | clk_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | clk_o_MC.D1 | 479 | ? | 0 | 0 | clk_o_MC | NULL | NULL | clk_o_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | clk_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | clk_o_MC.D2 | 480 | ? | 0 | 0 | clk_o_MC | NULL | NULL | clk_o_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | clk_o_MC.REG | clk_o_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | clk_o_MC.D | 478 | ? | 0 | 0 | clk_o_MC | NULL | NULL | clk_o_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | clk_o_MC.Q | 482 | ? | 0 | 0 | clk_o_MC | NULL | NULL | clk_o_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | clk_o | fifo_stream_in_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | clk_o_MC.Q | 483 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | clk_o_MC.Q | clk_o_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | clk_o | 484 | PO | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | clk_o | 0 | 6 | OI_OUT
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_in<0>_II | fifo_stream_in_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_in<0> | 485 | PI | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_in<0>_II/UIM | 502 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | data_in<0>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_in<1>_II | fifo_stream_in_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_in<1> | 486 | PI | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_in<1>_II/UIM | 513 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | data_in<1>_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | NULL | faddr<0>_MC | fifo_stream_in_COPY_0_COPY_0 | 0 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | faddr<0>_MC.Q | 491 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | faddr<0>_MC.Q | faddr<0>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | faddr<0>_MC.SI | faddr<0>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | faddr<0>_MC.D1 | 489 | ? | 0 | 0 | faddr<0>_MC | NULL | NULL | faddr<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | faddr<0>_MC.D2 | 488 | ? | 0 | 0 | faddr<0>_MC | NULL | NULL | faddr<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | faddr<0>_MC.REG | faddr<0>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | faddr<0>_MC.D | 487 | ? | 0 | 0 | faddr<0>_MC | NULL | NULL | faddr<0>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | faddr<0>_MC.Q | 490 | ? | 0 | 0 | faddr<0>_MC | NULL | NULL | faddr<0>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | faddr<0> | fifo_stream_in_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | faddr<0>_MC.Q | 491 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | faddr<0>_MC.Q | faddr<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | faddr<0> | 492 | PO | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | faddr<0> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Inv | faddr<1>_MC | fifo_stream_in_COPY_0_COPY_0 | 256 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | faddr<1>_MC.Q | 497 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | faddr<1>_MC.Q | faddr<1>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | faddr<1>_MC.SI | faddr<1>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | faddr<1>_MC.D1 | 495 | ? | 0 | 0 | faddr<1>_MC | NULL | NULL | faddr<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | faddr<1>_MC.D2 | 494 | ? | 0 | 0 | faddr<1>_MC | NULL | NULL | faddr<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | faddr<1>_MC.REG | faddr<1>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | faddr<1>_MC.D | 493 | ? | 0 | 0 | faddr<1>_MC | NULL | NULL | faddr<1>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | faddr<1>_MC.Q | 496 | ? | 0 | 0 | faddr<1>_MC | NULL | NULL | faddr<1>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | faddr<1> | fifo_stream_in_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | faddr<1>_MC.Q | 497 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | faddr<1>_MC.Q | faddr<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | faddr<1> | 498 | PO | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | faddr<1> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | fdata<0>_MC | fifo_stream_in_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in<0>_II/UIM | 502 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | data_in<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flagd_II/UIM | 505 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | flagd_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 506 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | fdata<0>_MC.Q | 508 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | fdata<0>_MC.Q | fdata<0>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | fdata<0>_MC.SI | fdata<0>_MC | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in<0>_II/UIM | 502 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | data_in<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flagd_II/UIM | 505 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | flagd_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | fdata<0>_MC.D1 | 501 | ? | 0 | 0 | fdata<0>_MC | NULL | NULL | fdata<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | fdata<0>_MC.D2 | 500 | ? | 0 | 0 | fdata<0>_MC | NULL | NULL | fdata<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | data_in<0>_II/UIM
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | fdata<0>_MC.CE | 503 | ? | 0 | 0 | fdata<0>_MC | NULL | NULL | fdata<0>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | flagd_II/UIM
+
+SRFF_INSTANCE | fdata<0>_MC.REG | fdata<0>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | fdata<0>_MC.D | 499 | ? | 0 | 0 | fdata<0>_MC | NULL | NULL | fdata<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 506 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clk_II/UIM
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | fdata<0>_MC.CE | 503 | ? | 0 | 0 | fdata<0>_MC | NULL | NULL | fdata<0>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | flagd_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | fdata<0>_MC.Q | 507 | ? | 0 | 0 | fdata<0>_MC | NULL | NULL | fdata<0>_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | flagd_II | fifo_stream_in_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | flagd | 504 | PI | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | flagd_II/UIM | 505 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | flagd_II | 0 | 5 | II_IMUX
+
+OUTPUT_INSTANCE | 0 | fdata<0> | fifo_stream_in_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | fdata<0>_MC.Q | 508 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | fdata<0>_MC.Q | fdata<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fdata<0> | 509 | PO | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | fdata<0> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | fdata<1>_MC | fifo_stream_in_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in<1>_II/UIM | 513 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | data_in<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flagd_II/UIM | 505 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | flagd_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 506 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | fdata<1>_MC.Q | 516 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | fdata<1>_MC.Q | fdata<1>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | fdata<1>_MC.SI | fdata<1>_MC | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in<1>_II/UIM | 513 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | data_in<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flagd_II/UIM | 505 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | flagd_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | fdata<1>_MC.D1 | 512 | ? | 0 | 0 | fdata<1>_MC | NULL | NULL | fdata<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | fdata<1>_MC.D2 | 511 | ? | 0 | 0 | fdata<1>_MC | NULL | NULL | fdata<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | data_in<1>_II/UIM
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | fdata<1>_MC.CE | 514 | ? | 0 | 0 | fdata<1>_MC | NULL | NULL | fdata<1>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | flagd_II/UIM
+
+SRFF_INSTANCE | fdata<1>_MC.REG | fdata<1>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | fdata<1>_MC.D | 510 | ? | 0 | 0 | fdata<1>_MC | NULL | NULL | fdata<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 506 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clk_II/UIM
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | fdata<1>_MC.CE | 514 | ? | 0 | 0 | fdata<1>_MC | NULL | NULL | fdata<1>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | flagd_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | fdata<1>_MC.Q | 515 | ? | 0 | 0 | fdata<1>_MC | NULL | NULL | fdata<1>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | fdata<1> | fifo_stream_in_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | fdata<1>_MC.Q | 516 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | fdata<1>_MC.Q | fdata<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fdata<1> | 517 | PO | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | fdata<1> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | fdata<2>_MC | fifo_stream_in_COPY_0_COPY_0 | 0 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | fdata<2>_MC.Q | 522 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | fdata<2>_MC.Q | fdata<2>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | fdata<2>_MC.SI | fdata<2>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | fdata<2>_MC.D1 | 520 | ? | 0 | 0 | fdata<2>_MC | NULL | NULL | fdata<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | fdata<2>_MC.D2 | 519 | ? | 0 | 0 | fdata<2>_MC | NULL | NULL | fdata<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | fdata<2>_MC.REG | fdata<2>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | fdata<2>_MC.D | 518 | ? | 0 | 0 | fdata<2>_MC | NULL | NULL | fdata<2>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | fdata<2>_MC.Q | 521 | ? | 0 | 0 | fdata<2>_MC | NULL | NULL | fdata<2>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | fdata<2> | fifo_stream_in_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | fdata<2>_MC.Q | 522 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | fdata<2>_MC.Q | fdata<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fdata<2> | 523 | PO | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | fdata<2> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | fdata<3>_MC | fifo_stream_in_COPY_0_COPY_0 | 0 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | fdata<3>_MC.Q | 528 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | fdata<3>_MC.Q | fdata<3>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | fdata<3>_MC.SI | fdata<3>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | fdata<3>_MC.D1 | 526 | ? | 0 | 0 | fdata<3>_MC | NULL | NULL | fdata<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | fdata<3>_MC.D2 | 525 | ? | 0 | 0 | fdata<3>_MC | NULL | NULL | fdata<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | fdata<3>_MC.REG | fdata<3>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | fdata<3>_MC.D | 524 | ? | 0 | 0 | fdata<3>_MC | NULL | NULL | fdata<3>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | fdata<3>_MC.Q | 527 | ? | 0 | 0 | fdata<3>_MC | NULL | NULL | fdata<3>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | fdata<3> | fifo_stream_in_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | fdata<3>_MC.Q | 528 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | fdata<3>_MC.Q | fdata<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fdata<3> | 529 | PO | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | fdata<3> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | fdata<4>_MC | fifo_stream_in_COPY_0_COPY_0 | 0 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | fdata<4>_MC.Q | 534 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | fdata<4>_MC.Q | fdata<4>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | fdata<4>_MC.SI | fdata<4>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | fdata<4>_MC.D1 | 532 | ? | 0 | 0 | fdata<4>_MC | NULL | NULL | fdata<4>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | fdata<4>_MC.D2 | 531 | ? | 0 | 0 | fdata<4>_MC | NULL | NULL | fdata<4>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | fdata<4>_MC.REG | fdata<4>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | fdata<4>_MC.D | 530 | ? | 0 | 0 | fdata<4>_MC | NULL | NULL | fdata<4>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | fdata<4>_MC.Q | 533 | ? | 0 | 0 | fdata<4>_MC | NULL | NULL | fdata<4>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | fdata<4> | fifo_stream_in_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | fdata<4>_MC.Q | 534 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | fdata<4>_MC.Q | fdata<4>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fdata<4> | 535 | PO | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | fdata<4> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | fdata<5>_MC | fifo_stream_in_COPY_0_COPY_0 | 0 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | fdata<5>_MC.Q | 540 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | fdata<5>_MC.Q | fdata<5>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | fdata<5>_MC.SI | fdata<5>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | fdata<5>_MC.D1 | 538 | ? | 0 | 0 | fdata<5>_MC | NULL | NULL | fdata<5>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | fdata<5>_MC.D2 | 537 | ? | 0 | 0 | fdata<5>_MC | NULL | NULL | fdata<5>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | fdata<5>_MC.REG | fdata<5>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | fdata<5>_MC.D | 536 | ? | 0 | 0 | fdata<5>_MC | NULL | NULL | fdata<5>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | fdata<5>_MC.Q | 539 | ? | 0 | 0 | fdata<5>_MC | NULL | NULL | fdata<5>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | fdata<5> | fifo_stream_in_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | fdata<5>_MC.Q | 540 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | fdata<5>_MC.Q | fdata<5>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fdata<5> | 541 | PO | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | fdata<5> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | fdata<6>_MC | fifo_stream_in_COPY_0_COPY_0 | 0 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | fdata<6>_MC.Q | 546 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | fdata<6>_MC.Q | fdata<6>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | fdata<6>_MC.SI | fdata<6>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | fdata<6>_MC.D1 | 544 | ? | 0 | 0 | fdata<6>_MC | NULL | NULL | fdata<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | fdata<6>_MC.D2 | 543 | ? | 0 | 0 | fdata<6>_MC | NULL | NULL | fdata<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | fdata<6>_MC.REG | fdata<6>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | fdata<6>_MC.D | 542 | ? | 0 | 0 | fdata<6>_MC | NULL | NULL | fdata<6>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | fdata<6>_MC.Q | 545 | ? | 0 | 0 | fdata<6>_MC | NULL | NULL | fdata<6>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | fdata<6> | fifo_stream_in_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | fdata<6>_MC.Q | 546 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | fdata<6>_MC.Q | fdata<6>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fdata<6> | 547 | PO | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | fdata<6> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | fdata<7>_MC | fifo_stream_in_COPY_0_COPY_0 | 0 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | fdata<7>_MC.Q | 552 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | fdata<7>_MC.Q | fdata<7>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | fdata<7>_MC.SI | fdata<7>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | fdata<7>_MC.D1 | 550 | ? | 0 | 0 | fdata<7>_MC | NULL | NULL | fdata<7>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | fdata<7>_MC.D2 | 549 | ? | 0 | 0 | fdata<7>_MC | NULL | NULL | fdata<7>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | fdata<7>_MC.REG | fdata<7>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | fdata<7>_MC.D | 548 | ? | 0 | 0 | fdata<7>_MC | NULL | NULL | fdata<7>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | fdata<7>_MC.Q | 551 | ? | 0 | 0 | fdata<7>_MC | NULL | NULL | fdata<7>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | fdata<7> | fifo_stream_in_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | fdata<7>_MC.Q | 552 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | fdata<7>_MC.Q | fdata<7>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fdata<7> | 553 | PO | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | fdata<7> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Inv | sloe_MC | fifo_stream_in_COPY_0_COPY_0 | 256 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | sloe_MC.Q | 558 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | sloe_MC.Q | sloe_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | sloe_MC.SI | sloe_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | sloe_MC.D1 | 556 | ? | 0 | 0 | sloe_MC | NULL | NULL | sloe_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | sloe_MC.D2 | 555 | ? | 0 | 0 | sloe_MC | NULL | NULL | sloe_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | sloe_MC.REG | sloe_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | sloe_MC.D | 554 | ? | 0 | 0 | sloe_MC | NULL | NULL | sloe_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | sloe_MC.Q | 557 | ? | 0 | 0 | sloe_MC | NULL | NULL | sloe_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | sloe | fifo_stream_in_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | sloe_MC.Q | 558 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | sloe_MC.Q | sloe_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | sloe | 559 | PO | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | sloe | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Inv | slrd_MC | fifo_stream_in_COPY_0_COPY_0 | 256 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | slrd_MC.Q | 564 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | slrd_MC.Q | slrd_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | slrd_MC.SI | slrd_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | slrd_MC.D1 | 562 | ? | 0 | 0 | slrd_MC | NULL | NULL | slrd_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | slrd_MC.D2 | 561 | ? | 0 | 0 | slrd_MC | NULL | NULL | slrd_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | slrd_MC.REG | slrd_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | slrd_MC.D | 560 | ? | 0 | 0 | slrd_MC | NULL | NULL | slrd_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | slrd_MC.Q | 563 | ? | 0 | 0 | slrd_MC | NULL | NULL | slrd_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | slrd | fifo_stream_in_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | slrd_MC.Q | 564 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | slrd_MC.Q | slrd_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | slrd | 565 | PO | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | slrd | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldHigh | slwr_MC | fifo_stream_in_COPY_0_COPY_0 | 512 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flagd_II/UIM | 505 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | flagd_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 569 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | slwr_MC.Q | 571 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | slwr_MC.Q | slwr_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | slwr_MC.SI | slwr_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flagd_II/UIM | 505 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | flagd_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | slwr_MC.D1 | 567 | ? | 0 | 0 | slwr_MC | NULL | NULL | slwr_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_FALSE | flagd_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | slwr_MC.D2 | 568 | ? | 0 | 0 | slwr_MC | NULL | NULL | slwr_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | slwr_MC.REG | slwr_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | slwr_MC.D | 566 | ? | 0 | 0 | slwr_MC | NULL | NULL | slwr_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 569 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clk_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | slwr_MC.Q | 570 | ? | 0 | 0 | slwr_MC | NULL | NULL | slwr_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | slwr | fifo_stream_in_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | slwr_MC.Q | 571 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | slwr_MC.Q | slwr_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | slwr | 572 | PO | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | slwr | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | fifo_stream_in_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | NULL | 0 | data_in<0>_II | 1 | NULL | 0 | 37 | 49152
+FBPIN | 9 | sloe_MC | 1 | NULL | 0 | sloe | 1 | 34 | 53248
+FBPIN | 13 | slwr_MC | 1 | NULL | 0 | slwr | 1 | 30 | 51200
+
+FB_INSTANCE | FOOBAR2_ | fifo_stream_in_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | NULL | 0 | clk_II | 1 | NULL | 0 | 40 | 49152
+FBPIN | 10 | fdata<0>_MC | 1 | NULL | 0 | fdata<0> | 1 | 1 | 57344
+FBPIN | 12 | fdata<1>_MC | 1 | NULL | 0 | fdata<1> | 1 | 2 | 49152
+FBPIN | 13 | fdata<2>_MC | 1 | NULL | 0 | fdata<2> | 1 | 3 | 49152
+
+FB_INSTANCE | FOOBAR3_ | fifo_stream_in_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | slrd_MC | 1 | NULL | 0 | slrd | 1 | 29 | 49152
+FBPIN | 2 | faddr<1>_MC | 1 | NULL | 0 | faddr<1> | 1 | 28 | 49152
+FBPIN | 3 | faddr<0>_MC | 1 | NULL | 0 | faddr<0> | 1 | 27 | 49152
+FBPIN | 10 | clk_o_MC | 1 | NULL | 0 | clk_o | 1 | 22 | 49152
+FBPIN | 15 | NULL | 0 | data_in<1>_II | 1 | NULL | 0 | 18 | 49152
+
+FB_INSTANCE | FOOBAR4_ | fifo_stream_in_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | fdata<3>_MC | 1 | NULL | 0 | fdata<3> | 1 | 5 | 49152
+FBPIN | 2 | fdata<4>_MC | 1 | NULL | 0 | fdata<4> | 1 | 6 | 49152
+FBPIN | 7 | fdata<5>_MC | 1 | NULL | 0 | fdata<5> | 1 | 8 | 49152
+FBPIN | 11 | fdata<6>_MC | 1 | NULL | 0 | fdata<6> | 1 | 12 | 49152
+FBPIN | 13 | fdata<7>_MC | 1 | NULL | 0 | fdata<7> | 1 | 13 | 49152
+FBPIN | 15 | NULL | 0 | flagd_II | 1 | NULL | 0 | 16 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR5_ | fifo_stream_in_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | fifo_stream_in_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_II/UIM | 481 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | clk_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 12 | CT_SI4
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 569 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clk_II/UIM
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | fifo_stream_in_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_II/UIM | 481 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | clk_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 12 | CT_SI4
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 506 | ? | 0 | 0 | fifo_stream_in_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | clk_II/UIM
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | fifo_stream_in_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | fifo_stream_in_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 2
+PLA_TERM | 4 | 
+SPPTERM | 1 | IV_TRUE | clk_II/UIM
+PLA_TERM | 46 | 
+SPPTERM | 1 | IV_FALSE | flagd_II/UIM
+
+PLA | FOOBAR2_ | 5
+PLA_TERM | 0 | 
+SPPTERM | 1 | IV_TRUE | data_in<0>_II/UIM
+PLA_TERM | 1 | 
+SPPTERM | 1 | IV_TRUE | data_in<1>_II/UIM
+PLA_TERM | 4 | 
+SPPTERM | 1 | IV_TRUE | clk_II/UIM
+PLA_TERM | 37 | 
+SPPTERM | 1 | IV_TRUE | flagd_II/UIM
+PLA_TERM | 43 | 
+SPPTERM | 1 | IV_TRUE | flagd_II/UIM
+
+PLA | FOOBAR3_ | 1
+PLA_TERM | 37 | 
+SPPTERM | 1 | IV_TRUE | clk_II/UIM
+
+BUSINFO | DATA_IN<1:0> | 2 | 0 | 0 | data_in<0> | 1 | data_in<1> | 0
+BUSINFO | FADDR<1:0> | 2 | 0 | 1 | faddr<0> | 1 | faddr<1> | 0
+BUSINFO | FDATA<7:0> | 8 | 0 | 1 | fdata<0> | 7 | fdata<1> | 6 | fdata<2> | 5 | fdata<3> | 4 | fdata<4> | 3 | fdata<5> | 2 | fdata<6> | 1 | fdata<7> | 0
+
+IOSTD | LVCMOS18
+clk | LVCMOS18
+clk_o | LVCMOS18
+data_in<0> | LVCMOS18
+data_in<1> | LVCMOS18
+faddr<0> | LVCMOS18
+faddr<1> | LVCMOS18
+flagd | LVCMOS18
+fdata<0> | LVCMOS18
+fdata<1> | LVCMOS18
+fdata<2> | LVCMOS18
+fdata<3> | LVCMOS18
+fdata<4> | LVCMOS18
+fdata<5> | LVCMOS18
+fdata<6> | LVCMOS18
+fdata<7> | LVCMOS18
+sloe | LVCMOS18
+slrd | LVCMOS18
+slwr | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 1 | flagd | 16 | 4 | clk | 40
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | 62 | -1 | -1 | 17 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 1 | flagd | 16 | 2 | data_in<1> | 18 | 4 | clk | 40 | 10 | data_in<0> | 37
+
+FB_IMUX_INDEX | FOOBAR2_ | -1 | 62 | 46 | -1 | 17 | -1 | -1 | -1 | -1 | -1 | 1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 4 | clk | 40
+
+FB_IMUX_INDEX | FOOBAR3_ | -1 | -1 | -1 | -1 | 17 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+

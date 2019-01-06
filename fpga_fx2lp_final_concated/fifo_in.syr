@@ -1,0 +1,227 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: fifo_in.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fifo_in.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fifo_in"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : fifo_in
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "fifo_stream_in.v" in library work
+Module <fifo_in> compiled
+No errors in compilation
+Analysis of file <"fifo_in.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <fifo_in> in library <work> with parameters.
+	IDLE = "00001"
+	IS_FULL = "00100"
+	SELECT_FIFO = "00010"
+	SETUP_DATA = "01000"
+	WRITE = "10000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <fifo_in>.
+	IDLE = 5'b00001
+	IS_FULL = 5'b00100
+	SELECT_FIFO = 5'b00010
+	SETUP_DATA = 5'b01000
+	WRITE = 5'b10000
+WARNING:Xst:2725 - "fifo_stream_in.v" line 66: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "fifo_stream_in.v" line 69: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "fifo_stream_in.v" line 72: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "fifo_stream_in.v" line 78: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "fifo_stream_in.v" line 81: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "fifo_stream_in.v" line 97: Size mismatch between case item and case selector.
+Module <fifo_in> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <fifo_in>.
+    Related source file is "fifo_stream_in.v".
+WARNING:Xst:1306 - Output <pkt_end> is never assigned.
+WARNING:Xst:646 - Signal <empty> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <slwr>.
+    Found 6-bit register for signal <current_state>.
+    Found 8-bit up counter for signal <data_out>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <fifo_in> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 6-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <current_state_5> (without init value) has a constant value of 0 in block <fifo_in>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <fifo_in> ...
+  implementation constraint: INIT=s	 : slwr
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : fifo_in.ngr
+Top Level Output File Name         : fifo_in
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : CoolRunner2 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 85
+#      AND2                        : 18
+#      AND3                        : 6
+#      AND4                        : 2
+#      AND5                        : 4
+#      GND                         : 1
+#      INV                         : 40
+#      OR2                         : 3
+#      OR3                         : 1
+#      OR5                         : 2
+#      VCC                         : 1
+#      XOR2                        : 7
+# FlipFlops/Latches                : 14
+#      FD                          : 6
+#      FDCE                        : 8
+# IO Buffers                       : 16
+#      IBUF                        : 2
+#      OBUF                        : 14
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.56 secs
+ 
+--> 
+
+Total memory usage is 232368 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
